@@ -19,7 +19,7 @@ export async function getServerSideProps(context) {
       };
     }
 
-    const res = await fetch(`http://localhost:3000/api/getData`);
+    const res = await fetch(`https://netflix-opal-seven.vercel.app/api/getData`);
     const data = await res.json();
 
  
