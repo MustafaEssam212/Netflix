@@ -1,0 +1,91 @@
+
+
+.navbar-container{
+    width: 4%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    .link{
+        width: 100%;
+        height: 60px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+
+
+        a{
+            color: rgb(133, 133, 133);
+            transition: .3s all linear;
+            -webkit-transition: .3s all linear;
+            -moz-transition: .3s all linear;
+            -ms-transition: .3s all linear;
+            -o-transition: .3s all linear;
+    
+            .Icon{
+                font-size: 18px;
+            }
+    
+            .search, .arrows, .trend, .screen, .tools, .plus, .logout{
+                font-size: 22px;
+            }
+
+
+            
+            .logout{
+                transform: rotate(180deg);
+                -webkit-transform: rotate(180deg);
+                -moz-transform: rotate(180deg);
+                -ms-transform: rotate(180deg);
+                -o-transform: rotate(180deg);
+}
+    
+    
+        }
+
+        &::after{
+            content: '';
+            position: absolute;
+            left: 50%;
+            bottom: 10px;
+            background-color: transparent;
+            height: 2px;
+            width: 50%;
+            transform: translate(-50%, -50%);
+            transition: .3s all linear;
+            -webkit-transition: .3s all linear;
+            -moz-transition: .3s all linear;
+            -ms-transition: .3s all linear;
+            -o-transition: .3s all linear;
+        }
+
+
+        &:hover{
+            a{
+                color: white;
+            }
+
+
+        }
+
+    }
+
+    .active{
+        a{
+            color: white;
+        }
+
+        &::after{
+            background-color: var(--Red-Color);
+        }
+    }
+
+    .logo{
+        position: relative;
+        height: 60px;
+        width: 50px;
+    }
+}

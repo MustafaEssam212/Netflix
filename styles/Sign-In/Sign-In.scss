@@ -1,0 +1,154 @@
+
+
+.sign-in{
+
+    height: 100vh;
+    width: 100%;
+    position: relative;
+
+    .img-intro{
+        height: 100%;
+        width: 100%;
+        position: relative;
+        background-color: blue;
+    }
+
+    
+    .layer-on{
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0.607);
+
+
+        .content{
+           
+            width: 100%;
+            height: calc(100% - 90px);
+            display: flex;
+            justify-content: center;
+            align-items: flex-end;
+
+            form{
+                background-color: rgba(0, 0, 0, 0.616);
+                width: 30%;
+                height: 100%;
+                
+                h1{
+                    margin: 50px;
+                    color: white;
+                }
+
+                .form-Inputs{
+                    display: flex;
+                    flex-direction: column;
+                    gap: 15px;
+                    align-items: center;
+
+                    .input-container{
+                        height: 55px;
+                        width: 80%;
+                    }
+
+                    .first-button{
+                        width: 80%;
+                        height: 40px;
+                        background-color: var(--Red-Color);
+                        color: white;
+                        border-radius: 5px;
+                        -webkit-border-radius: 5px;
+                        -moz-border-radius: 5px;
+                        -ms-border-radius: 5px;
+                        -o-border-radius: 5px;
+                        transition: .3s all linear;
+                        -webkit-transition: .3s all linear;
+                        -moz-transition: .3s all linear;
+                        -ms-transition: .3s all linear;
+                        -o-transition: .3s all linear;
+
+                        &:hover{
+                            background-color: #C11119;
+                        }
+                    }
+
+                    .message{
+                        width: calc(50% + 150px);
+                        font-size: 13px;
+                        margin: 5px auto;
+                        
+                        p{
+                            display: flex;
+                            align-items: center;
+                            gap: 7px;
+                            color: rgb(0, 221, 0);
+                            font-weight: 600;
+                            .Icon{
+                                font-size: 17px;
+                            }
+                        }
+    
+                        .error-message{
+                            color: #C11119;
+                        }
+                    }
+
+                    .second-button{
+                        width: 80%;
+                        height: 40px;
+                        background-color: rgba(255, 255, 255, 0.584);
+                        color: white;
+                        border-radius: 5px;
+                        -webkit-border-radius: 5px;
+                        -moz-border-radius: 5px;
+                        -ms-border-radius: 5px;
+                        -o-border-radius: 5px;
+                        transition: .3s all linear;
+                        -webkit-transition: .3s all linear;
+                        -moz-transition: .3s all linear;
+                        -ms-transition: .3s all linear;
+                        -o-transition: .3s all linear;
+
+                        &:hover{
+                            background-color: #828282;
+                        }
+                    }
+
+                    span{
+                        color: white;
+                    }
+
+                    a{
+                        font-weight: 200;
+                        color: white;
+                        text-decoration: none;
+                    }
+                }
+            }
+
+            .already-logged{
+                background-color: rgba(0, 0, 0, 0.616);
+                width: 30%;
+                height: 50%;
+                padding: 20px;
+                display: flex;
+                align-items: center;
+                flex-direction: column;
+                justify-content: center;
+                p{
+                    color: white;
+
+                    span{
+                        color: #C11119;
+                    }
+                }
+
+                a{
+                    color: blue;
+                }
+            }
+        }
+    }
+
+}
